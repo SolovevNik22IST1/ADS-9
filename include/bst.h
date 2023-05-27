@@ -55,7 +55,7 @@ class BST {
     int search(const T& value) {
         searchTree(root, value);
         return s;
-    }    
+    }
     void searchTree(Node* root, const T& value) {
         if (!root)
             s = 0;
