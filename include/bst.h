@@ -41,6 +41,7 @@ class BST {
             return 0;
         return mymax(depthTree(root->left), depthTree(root->right)) + 1;
     }
+
  public:
     BST() :root(nullptr), s(0) {}
     void add(const T& value) {
@@ -54,8 +55,7 @@ class BST {
     int search(const T& value) {
         searchTree(root, value);
         return s;
-    }
-    
+    }    
     void searchTree(Node* root, const T& value) {
         if (!root)
             s = 0;
