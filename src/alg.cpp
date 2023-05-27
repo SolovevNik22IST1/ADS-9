@@ -70,4 +70,3 @@ std::string get_corr_word(std::string s) {
     }
     return s;
 }
-}
